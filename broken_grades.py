@@ -21,26 +21,26 @@
 
 exam_one = int(input("Input exam grade one: "))
 
-exam_two = input("Input exam grade two: "))
+exam_two = int(input("Input exam grade two: ")) #extra bracket and int needs to be added
 
-exam_3 = str(input("Input exam grade three: "))
+exam_three = int(input("Input exam grade three: ")) #change str to int and changed the varaible name to three
 
-grades = [exam_one exam_two exam_three]
+grades = [exam_one, exam_two, exam_three] #added missing commas
 sum = 0
-for grade in grade:
+for grade in grades: #corrected the name of the variable
   sum = sum + grade
 
-avg = sum / len(grdes)
+avg = sum / len(grades) #corrected the name of the variable
 
 if avg >= 90:
     letter_grade = "A"
-elif avg >= 80 and avg < 90
+elif avg >= 80 and avg < 90: #added colon
     letter_grade = "B"
-elif avg > 69 and avg < 80:
-    letter_grade = "C'
-elif avg <= 69 and avg >= 65:
+elif avg >= 70 and avg < 80: #corrected the condition for grade C
+    letter_grade = "C" #added double quotes instead of a single quote
+elif avg <= 69 and avg >= 60: #corrected the condition for grade D
     letter_grade = "D"
-elif:
+else: #changed elif to else 
     letter_grade = "F"
 
 for grade in grades:
@@ -50,7 +50,8 @@ for grade in grades:
 
     print("Grade: " + letter_grade)
 
-if letter-grade is "F":
-    print "Student is failing."
+if letter_grade is "F": #corrected the variable name 
+    print ("Student is failing.") #added parantheses
 else:
-    print "Student is passing."
+    print ("Student is passing.") #added parantheses
+
